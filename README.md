@@ -29,6 +29,8 @@ If you have memory image, you can extract master key candidates using volafox pr
     ....
     $ python chainbreaker.py -f [keychain file] -k [master key]
 
+### Simple script, i use this method, certs and keys saved to exported directory:
+python ch.run -f ~/Library/Keychains/login.keychain-db -pMyMegaPassLoginToUnlockKeychain
 
 ## Example
     $ python vol.py -i ~/Desktop/show/macosxml.mem -o keychaindump

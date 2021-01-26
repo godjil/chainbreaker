@@ -1,10 +1,15 @@
 Here is info related to a quick hack of chainbreaker to dump non-exportable keys on High Sierra 10.13.
 See README.md original README for chainbreaker.
 Credits for coding go to Anton Brazovski.
+Make it worked: Artem Kochetkov https://github.com/godjil/
 
 === === === === === === === === === === === === === === === === === === === === === === === === 
 
 Prerequisites: sudo pip install hexdump pycrypto
+
+### Simple script, i use this method, certs and keys saved to exported directory:
+python ch.run -f ~/Library/Keychains/login.keychain-db -pMyMegaPassLoginToUnlockKeychain
+
 
 $ ./chainbreaker.py -f ~/Library/Keychains/login.keychain-db -p "ooUlah..#"
  [-] DB Key
